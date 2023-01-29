@@ -1,0 +1,2 @@
+npx json-server --watch src\assets\Data\db.json   this is for Admin,User,Seller[ loging db.json ].
+npx json-server --watch src\assets\Data\product.json --port 3004   this is for [product.json].

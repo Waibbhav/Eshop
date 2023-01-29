@@ -1,0 +1,774 @@
+{
+  "user_login": [
+    {
+      "email": "ankita123@gmail.com",
+      "password": "Ankita@123",
+      "id": 1
+    },
+    {
+      "email": "mangaldeep@gmail.com",
+      "password": "Mdm@1234",
+      "id": 2
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 3
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 4
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 5
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 6
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 7
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 8
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 9
+    },
+    {
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 10
+    },
+    {
+      "email": "bd@gmail.com",
+      "password": "Bd@1234",
+      "id": 11
+    },
+    {
+      "email": "bd@gmail.com",
+      "password": "Bd@1234",
+      "id": 12
+    },
+    {
+      "email": "som@gmail.com",
+      "password": "Som@1234",
+      "id": 13
+    },
+    {
+      "email": "ankita123@gmail.com",
+      "password": "Ankita@123",
+      "id": 14
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 15
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 16
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 17
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 18
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 19
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 20
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 21
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 22
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 23
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 24
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 25
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 26
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 27
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 28
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 29
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 30
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 31
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 32
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 33
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 34
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 35
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 36
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 37
+    }
+  ],
+  "user_reg": [
+    {
+      "first_name": "Ankita",
+      "last_name": "Mondal",
+      "phn": "1234567890",
+      "email": "ankita123@gmail.com",
+      "password": "Ankita@123",
+      "id": 1
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mondal",
+      "phn": "1234567891",
+      "email": "soumyadeep@gmail.com",
+      "password": "Soumya@123",
+      "id": 2
+    },
+    {
+      "first_name": "Ankita",
+      "last_name": "Mondal",
+      "phn": "1231231234",
+      "email": "ankita1@gmail.com",
+      "password": "Ankita@1",
+      "id": 3
+    },
+    {
+      "first_name": "Soumya",
+      "last_name": "Mondal",
+      "phn": "2342342345",
+      "email": "soumya@gmail.com",
+      "password": "Soumya@12",
+      "id": 4
+    },
+    {
+      "first_name": "Mangaldeep",
+      "last_name": "Mandal",
+      "phn": "7584916000",
+      "email": "mangaldeep@gmail.com",
+      "password": "Mdm@1234",
+      "id": 5
+    },
+    {
+      "first_name": "Subhajit",
+      "last_name": "Mandal",
+      "phn": "1234568790",
+      "email": "subhajit@gmail.com",
+      "password": "Subha@1234",
+      "id": 6
+    },
+    {
+      "first_name": "Bikas",
+      "last_name": "Das",
+      "phn": "1234569885",
+      "email": "bd@gmail.com",
+      "password": "Bd@1234",
+      "id": 7
+    },
+    {
+      "first_name": "Som",
+      "last_name": "Das",
+      "phn": "1234567890",
+      "email": "som@gmail.com",
+      "password": "Som@1234",
+      "id": 8
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "123456789",
+      "email": "user1@gmail.com",
+      "password": "User@1234",
+      "id": 9
+    },
+    {
+      "first_name": "waibbhav",
+      "last_name": "singh",
+      "phn": "9051660149",
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 10
+    }
+  ],
+  "seller_login": [
+    {
+      "email": "mrsdm6666@gmail.com",
+      "password": "Sdm@1234",
+      "id": 1
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 2
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 3
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 4
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 5
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 6
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 7
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 8
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 9
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 10
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 11
+    },
+    {
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 12
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 13
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 14
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 15
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 16
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 17
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 18
+    },
+    {
+      "email": "seller123@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 19
+    }
+  ],
+  "seller_reg": [
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "7584916077",
+      "email": "mrsdm6666@gmail.com",
+      "password": "Sdm@1234",
+      "id": 1
+    },
+    {
+      "first_name": "Soumya",
+      "last_name": "Deep",
+      "phn": "1234567890",
+      "email": "soumyadeep@gmail.com",
+      "password": "Abc@1234",
+      "id": 2
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "9434235870",
+      "email": "seller1@gmail.com",
+      "password": "Seller@123",
+      "id": 3
+    },
+    {
+      "first_name": "waibbhav",
+      "last_name": "singh",
+      "phn": "9051660149",
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 4
+    },
+    {
+      "first_name": "waibbhav",
+      "last_name": "singh",
+      "phn": "9051660149",
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 5
+    },
+    {
+      "first_name": "waibbhav",
+      "last_name": "singh",
+      "phn": "9051660149",
+      "email": "seller123@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 6
+    }
+  ],
+  "admin_login": [
+    {
+      "email": "ankita@gmail.com",
+      "password": "Ankita@123",
+      "id": 1
+    },
+    {
+      "email": "soumya@gmail.com",
+      "password": "Somya@1234",
+      "id": 2
+    },
+    {
+      "email": "apu@gmail.com",
+      "password": "Apu@1234",
+      "id": 3
+    },
+    {
+      "email": "soumya@gmail.com",
+      "password": "Somya@1234",
+      "id": 4
+    },
+    {
+      "email": "soumya@gmail.com",
+      "password": "Somya@1234",
+      "id": 5
+    },
+    {
+      "email": "soumya@gmail.com",
+      "password": "Somya@1234",
+      "id": 6
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 7
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 8
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 9
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 10
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 11
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 12
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 13
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 14
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 15
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 16
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 17
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 18
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 19
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 20
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 21
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 22
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 23
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 24
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 25
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 26
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 27
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 28
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 29
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 30
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 31
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 32
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 33
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 34
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 35
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 36
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 37
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 38
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 39
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 40
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 41
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 42
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 43
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 44
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 45
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 46
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 47
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 48
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 49
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 50
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 51
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 52
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 53
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 54
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 55
+    },
+    {
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 56
+    }
+  ],
+  "admin_reg": [
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "7584916077",
+      "email": "soumyadeep@gmail.com",
+      "password": "Sdm@721253",
+      "id": 1
+    },
+    {
+      "first_name": "Ankita",
+      "last_name": "Mondal",
+      "phn": "1236547890",
+      "email": "ankita@gmail.com",
+      "password": "Ankita@123",
+      "id": 2
+    },
+    {
+      "first_name": "Apu",
+      "last_name": "Roy",
+      "phn": "123456789",
+      "email": "apu@gmail.com",
+      "password": "Apu@1234",
+      "id": 3
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Roy",
+      "phn": "1234567890",
+      "email": "soumya@gmail.com",
+      "password": "Somya@1234",
+      "id": 4
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "9562378451",
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 5
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "9562378451",
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 6
+    },
+    {
+      "first_name": "Soumyadeep",
+      "last_name": "Mandal",
+      "phn": "9562378451",
+      "email": "admin1@gmail.com",
+      "password": "Admin@1234",
+      "id": 7
+    },
+    {
+      "first_name": "waibbhav",
+      "last_name": "singh",
+      "phn": "9051660149",
+      "email": "waibbhav786@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 8
+    },
+    {
+      "first_name": "Ishan",
+      "last_name": "singh",
+      "phn": "9051660149",
+      "email": "singhwaibbhav@gmail.com",
+      "password": "Waibbhav@7",
+      "id": 9
+    }
+  ]
+}

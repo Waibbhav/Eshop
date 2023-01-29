@@ -1,0 +1,43 @@
+
+<div class="container-xxl py-5">
+  <div class="container">
+    <div
+      class="text-center mx-auto mb-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+      style="max-width: 600px"
+    >
+      <!-- <h6 class="section-title bg-white text-center text-primary px-3">Services</h6> -->
+      <h1 class="display-6 mb-4">
+        We Focuse On Provide The Best Products In All Sectors
+      </h1>
+    </div>
+    <div class="row g-4">
+      <div
+        class="col-lg-4 col-md-6 wow fadeInUp"
+        data-wow-delay="0.1s"
+        *ngFor="let item of subcatarr?.subcategory"
+      >
+        <a
+          class="service-item d-block rounded text-center h-100 p-4"
+          routerLink="/product/subProdList/{{ item?.name }}"
+        >
+          <img
+            class=" rounded mb-4"
+            src="{{ item?.sub_img }}"
+            alt="{{ item?.name }} image"
+            width="300"
+            height="200"
+          />
+          <!-- <img
+            class="rounded-circle"
+            alt="avatar2"
+            src="{{ item?.sub_img }}"
+            width="300"
+            height="300"
+          /> -->
+          <h4 class="mb-0">{{ item?.name }}</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

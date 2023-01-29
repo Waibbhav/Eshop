@@ -1,0 +1,31 @@
+.container {
+  margin-top: 0px;
+  .input-group{
+    margin-bottom: 0% !important;
+  }
+}
+
+.btn{
+  background-color: #60b4df;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.input-text{
+  background-color: #b2e2f9;
+}
+
+.input-text:focus {
+  box-shadow: 0px 0px 0px;
+  border-color: #fff;
+  background-color: #8fd3f5;
+  outline: 0px;
+}
+
+.form-control {
+ 
+    border: 1px solid #fff;
+}

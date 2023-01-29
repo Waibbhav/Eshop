@@ -1,0 +1,61 @@
+@mixin footer() {
+    padding: 40px 0;
+    border-bottom: 1px solid #fff;
+  }
+  
+  footer {
+    background-color: #000;
+  
+    .uppersec,
+    .lowersec {
+      @include footer();
+    }
+  
+    .whiteclr {
+      color: #fff;
+    }
+  
+    .socialicon {
+      color: #fff;
+      font-size: 27px;
+      margin-right: 20px;
+      &:hover {
+        color: rgb(24, 149, 55);
+      }
+    }
+  
+    .submitbutton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 0.7em 1.4em 0.7em 1.1em;
+      color: white;
+      background: #ad5389;
+      background: linear-gradient(
+        0deg,
+        rgb(7, 139, 45) 0%,
+        rgba(102, 247, 113, 1) 100%
+      );
+      border: none;
+      box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+      letter-spacing: 0.05em;
+      // border-radius: 20em;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      // width: 35%;
+    }
+  
+    .submitbutton:hover {
+      box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+    }
+  
+    .submitbutton:active {
+      box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+    }
+  }
+  

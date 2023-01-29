@@ -1,0 +1,238 @@
+<section class="h-100" style="background-color: #eee;">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10">
+  
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+            <div>
+              <p class="mb-0"> <a  class="text-body" (click)="emptycart()">Empty cart</a></p>
+            </div>
+            <div>
+                <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
+                      class="fas fa-angle-down mt-1"></i></a></p>
+              </div>
+          </div>
+
+          <div *ngFor="let x of products">
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img
+                    src="{{x.image}}"
+                    class="img-fluid rounded-3" alt="Cotton T-shirt">
+                </div>
+                
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">{{x.name}}</p>
+                  <p><span class="text-muted">Description: </span>{{x.description}}<span></span></p>
+                </div>
+
+                <!-- <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+  
+                  <input id="form1" min="0" name="quantity" value="2" type="number"
+                    class="form-control form-control-sm" />
+  
+                  <button class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div> -->
+
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0">₹{{x.price}}</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a  class="text-danger" (click)="removeItem(x)"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card mb-5">
+            <div class="card-body p-4">
+              <div class="float-end">
+                <p class="mb-0 me-5 d-flex align-items-center">
+                  <span class="small text-muted me-2">Order total:</span> <span
+                    class="lead fw-normal">₹{{grandTotal}}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card mb-4">
+            <div class="card-body p-4 d-flex flex-row">
+              <div class="form-outline flex-fill">
+                <input type="text" id="form1" class="form-control form-control-lg" />
+                <label class="form-label" for="form1">Discount code</label>
+              </div>
+              <button type="button" class="btn btn-outline-warning btn-lg ms-3">Apply</button>
+            </div>
+          </div>
+
+  
+          <div class="card">
+            <div class="card-body">
+              <button type="button" class="btn btn-warning btn-block btn-lg"  data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Proceed to Pay</button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <div
+  class="modal "
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+        <h1 class="fw-bold mb-0 fs-2" id="exampleModalLabel">
+          <i class="fa fa-home" aria-hidden="true"></i> Address
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <form [formGroup]="addressForm" (ngSubmit)="submitData()">
+          <div class="form-group col-md-12">
+            <label for="formGroupExampleInput">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+              formControlName="name"
+            />
+          </div>
+
+          <div class="warning" *ngIf="addressForm.get('name')?.touched">
+            <div *ngIf="addressForm.get('name')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Phone Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhn4"
+              formControlName="phn"
+            />
+          </div>
+
+          <div class="warning" *ngIf="addressForm.get('phn')?.touched">
+            <div *ngIf="addressForm.get('phn')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+
+          <!-- Pin -->
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Pin</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhn4"
+              formControlName="pin"
+            />
+          </div>
+
+          <div class="warning" *ngIf="addressForm.get('pin')?.touched">
+            <div *ngIf="addressForm.get('pin')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+
+          <!-- State -->
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhn4"
+              formControlName="state"
+            />
+          </div>
+
+          <div class="warning" *ngIf="addressForm.get('state')?.touched">
+            <div *ngIf="addressForm.get('state')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+
+          <!-- House No -->
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">House No, Building Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhn4"
+              formControlName="house"
+            />
+          </div>
+
+          <div class="warning" *ngIf="addressForm.get('house')?.touched">
+            <div *ngIf="addressForm.get('house')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+
+          <!-- Road Name -->
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Road Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhn4"
+              formControlName="road"
+            />
+          </div>
+
+          <div class="warning" *ngIf="addressForm.get('road')?.touched">
+            <div *ngIf="addressForm.get('road')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+
+          <br />
+
+          <button
+            type="submit"
+            class="btn btn-dark"
+            [disabled]="addressForm.invalid"
+            routerLink="/product/address"
+          >
+            Save</button
+          ><br /><br />
+        </form>
+      </div>
+      <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"> Save </button>
+        </div> -->
+    </div>
+  </div>
+</div>
+

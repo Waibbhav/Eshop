@@ -1,0 +1,110 @@
+<div class="form1">
+  <div class="col-md-3">
+    <h3><i class="fa fa-product-hunt"></i> Edit Product</h3>
+    <form [formGroup]="editProdForm" (ngSubmit)="submitData()">
+      <div class="form-row">
+        <!-- Name -->
+        <div class="form-group col-md-12">
+          <label for="formGroupExampleInput">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            formControlName="name"
+            [attr.disabled]="isDisable"
+          />
+        </div>
+
+        <!-- Price -->
+        <div class="form-group col-md-12">
+          <label for="formGroupExampleInput2">Price</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput2"
+            formControlName="price"
+          />
+        </div>
+
+        <div class="warning" *ngIf="editProdForm.get('price')?.touched">
+          <div *ngIf="editProdForm.get('price')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="form-group col-md-12">
+          <label for="inputEmail4">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhn4"
+            formControlName="description"
+          />
+        </div>
+
+        <div class="warning" *ngIf="editProdForm.get('description')?.touched">
+          <div *ngIf="editProdForm.get('description')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="form-group col-md-12">
+          <label for="inputEmail4">Image Url</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            formControlName="image"
+            
+          />
+        </div>
+
+        <!-- Category -->
+        <div class="form-group col-md-12">
+          <label for="category">Category</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            formControlName="category"
+            [attr.disabled]="isDisable"
+          >
+            <option *ngFor="let item of catArr" value="{{ item }}">
+              {{ item }}
+            </option>
+          </select>
+        </div>
+
+        <!-- Subcategory -->
+        <div class="form-group col-md-12">
+          <label for="subcategory">Subcategory</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            formControlName="subcategory"
+            [attr.disabled]="isDisable"
+          >
+            <option *ngFor="let subcat of subcatArr" value="{{ subcat }}">
+              {{ subcat }}
+            </option>
+          </select>
+        </div>
+
+        <!-- <label for="profile_pic">Profile Picture</label><br>
+              <input type="file" id="profile_pic" (change)="onFileSelect($event)" /> -->
+
+        <br />
+
+        <button
+          type="submit"
+          class="btn btn-dark"
+          [disabled]="editProdForm.invalid"
+        >
+          Edit Product
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+

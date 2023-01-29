@@ -1,0 +1,10 @@
+$height: 200px;
+
+.prodcard {
+  height: $height + 200px;
+
+  .cardimg {
+    height: $height + 50px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+<footer>
+    <div class="container">
+      <div class="row uppersec">
+        <div
+          class="col-md-3 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div>
+            <span class="fs-4 whiteclr"
+              ><i class="fa-solid fa-shop"></i> eShop</span
+            >
+          </div>
+          <div class="mt-4">
+            <i class="fa fa-instagram socialicon" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp socialicon" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square socialicon" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square socialicon" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square socialicon" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h2 class="whiteclr">Address</h2>
+          <p class="whiteclr mt-3">
+            7th Floor, BENGAL ECO INTELLIGENT PARK, Plot No. 3, Unit No- 7E, EM
+            Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="whiteclr">Contact Us</h2>
+          <p class="whiteclr mt-3">
+            Email: <span class="fw-bold">eshop@gmail.com</span>
+          </p>
+          <p class="whiteclr">
+            Phone Number: <span class="fw-bold">1234567890</span>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="whiteclr">Newsletter</h2>
+          <div class="mt-3">
+            <form [formGroup]="subscribeform" (ngSubmit)="submit()">
+              <div class="form-floating mb-4 mt-3">
+                <input
+                  type="email"
+                  class="form-control inputfield"
+                  id="email"
+                  placeholder="Enter email"
+                  formControlName="email"
+                />
+  
+                <label for="email">Email</label>
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  class="btn btn-primary submitbutton mt-4"
+                  [disabled]="subscribeform.invalid"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row lowersec">
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="whiteclr">
+            © 2045 All Rights Reserved. Design by HTML Design
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  

@@ -1,0 +1,129 @@
+<div class="form1">
+    <div class="col-md-3">
+      <h3><i class="fa fa-product-hunt"></i> Add Product</h3>
+      <form [formGroup]="addProdForm" (ngSubmit)="submitData()">
+        <div class="form-row">
+          <!-- Name -->
+          <div class="form-group col-md-12">
+            <label for="formGroupExampleInput">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+              formControlName="name"
+            />
+          </div>
+  
+          <div class="warning" *ngIf="addProdForm.get('name')?.touched">
+            <div *ngIf="addProdForm.get('name')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+  
+          <!-- Price -->
+          <div class="form-group col-md-12">
+            <label for="formGroupExampleInput2">Price</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput2"
+              formControlName="price"
+            />
+          </div>
+  
+          <div class="warning" *ngIf="addProdForm.get('price')?.touched">
+            <div *ngIf="addProdForm.get('price')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+  
+          <!-- Description -->
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Description</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhn4"
+              formControlName="description"
+            />
+          </div>
+  
+          <div class="warning" *ngIf="addProdForm.get('description')?.touched">
+            <div *ngIf="addProdForm.get('description')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+  
+          <!-- Image -->
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Image</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputEmail4"
+              formControlName="image"
+            />
+          </div>
+  
+          <div class="warning" *ngIf="addProdForm.get('image')?.touched">
+            <div *ngIf="addProdForm.get('image')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+  
+          <!-- Category -->
+          <div class="form-group col-md-12">
+            <label for="category">Category</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              formControlName="category"
+            >
+              <option *ngFor="let item of catArr" value="{{ item }}">
+                {{ item }}
+              </option>
+            </select>
+          </div>
+  
+          <div class="warning" *ngIf="addProdForm.get('category')?.touched">
+            <div *ngIf="addProdForm.get('category')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+  
+          <!-- Subcategory -->
+          <div class="form-group col-md-12">
+            <label for="subcategory">Subcategory</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              formControlName="subcategory"
+            >
+              <option *ngFor="let subcat of subcatArr" value="{{ subcat }}">
+                {{ subcat }}
+              </option>
+            </select>
+          </div>
+  
+          <div class="warning" *ngIf="addProdForm.get('subcategory')?.touched">
+            <div *ngIf="addProdForm.get('subcategory')?.hasError('required')">
+              *Required Filled
+            </div>
+          </div>
+  
+          <!-- <label for="profile_pic">Profile Picture</label><br>
+                <input type="file" id="profile_pic" (change)="onFileSelect($event)" /> -->
+  
+          <br />
+  
+          <button
+            type="submit"
+            class="btn btn-dark"
+            [disabled]="addProdForm.invalid"
+          >
+            Add Product
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,173 @@
+<!-- <p>profile works!</p> -->
+<section class="vh-100" style="background-color: #f4f5f7">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <div class="card mb-3" style="border-radius: 0.5rem">
+          <div class="row g-0">
+            <div
+              class="col-md-4 gradient-custom text-center text-white"
+              style="
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+              "
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="Avatar"
+                class="img-fluid my-5"
+                style="width: 80px"
+              />
+              <h5>{{ userProfile[0]?.first_name }}</h5>
+              <p>{{ userProfile[0]?.last_name }}</p>
+              <i class="far fa-edit mb-5"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h6>{{ profile }} Profile</h6>
+                <hr class="mt-0 mb-4" />
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Email</h6>
+                    <p class="text-muted">{{ userProfile[0]?.email }}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Phone</h6>
+                    <p class="text-muted">{{ userProfile[0]?.phn }}</p>
+                  </div>
+                </div>
+                <h6>Projects</h6>
+                <hr class="mt-0 mb-4" />
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Recent</h6>
+                    <p class="text-muted">Lorem ipsum</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Most Viewed</h6>
+                    <p class="text-muted">Dolor sit amet</p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-start"
+                  *ngIf="isadminlogin()"
+                >
+                <a class="btn text-white" style="background-color: #e8942f;" (click)="openuserlist()" role="button">
+                  <i class="fa-solid fa-user-check"></i>&nbsp;
+                  User List
+                </a> &nbsp;&nbsp;
+                <a class="btn text-white" style=" background-color: #e8942f;;" (click)="opensellerlist()" role="button">
+                  <i class="fa-solid fa-people-carry-box"></i>&nbsp;
+                  Seller List
+                </a>
+                <a class="btn text-white  btn-floating" style="background-color: #000000f7;margin-left: 90px;" (click)="closelist()" role="button" *ngIf="userListShow || sellerListShow">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="col col-lg-6 mb-4 mb-lg-0"*ngIf="userListShow">
+        <div class="card mb-4 col-md-12">
+          <div class="card-body">
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <h2
+                  class="pt-3 pb-4 text-center font-bold font-up deep-purple-text"
+                >
+                {{listName}} List 
+                </h2>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <!--Table-->
+            <table class="table table-striped">
+              <!--Table head-->
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone No</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+              <!--Table body-->
+              <tbody>
+                <tr *ngFor="let user of userdata">
+                  <th scope="row">{{user?.id}}</th>
+                  <td>{{user?.first_name}}</td>
+                  <td>{{user?.last_name}}</td>
+                  <td>{{user?.email}}</td>
+                  <td>{{user?.phn}}</td>
+                </tr>
+              </tbody>
+              <!--Table body-->
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col col-lg-6 mb-4 mb-lg-0"*ngIf="sellerListShow">
+        <div class="card mb-4 col-md-12">
+          <div class="card-body">
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <h2
+                  class="pt-3 pb-4 text-center font-bold font-up deep-purple-text"
+                >
+                  {{listName}} List 
+                </h2>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <!--Table-->
+            <table class="table table-striped">
+              <!--Table head-->
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone No</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+              <!--Table body-->
+              
+                <tbody>
+                  <tr *ngFor="let user of sellerdata">
+                    <th scope="row">{{user?.id}}</th>
+                    <td>{{user?.first_name}}</td>
+                    <td>{{user?.last_name}}</td>
+                    <td>{{user?.email}}</td>
+                    <td>{{user?.phn}}</td>
+                  </tr>
+                </tbody>
+              
+              
+              <!--Table body-->
+            </table>
+          </div>
+        </div>
+      </div>
+      
+
+
+      
+    </div>
+  </div>
+</section>

@@ -1,0 +1,118 @@
+<div class="container">
+    <h3><i class="fa fa-home" aria-hidden="true"></i>Address</h3>
+    <form [formGroup]="addressForm" (ngSubmit)="submitData()">
+      <div class="form-row">
+        <!-- Name -->
+        <div class="form-group col-md-6">
+          <label for="formGroupExampleInput">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            formControlName="name"
+          />
+        </div>
+  
+        <div class="warning" *ngIf="addressForm.get('name')?.touched">
+          <div *ngIf="addressForm.get('name')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+  
+        <!-- Phone Number -->
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhn4"
+            formControlName="phn"
+          />
+        </div>
+  
+        <div class="warning" *ngIf="addressForm.get('phn')?.touched">
+          <div *ngIf="addressForm.get('phn')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+  
+        <!-- Pin -->
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Pin</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhn4"
+            formControlName="pin"
+          />
+        </div>
+  
+        <div class="warning" *ngIf="addressForm.get('pin')?.touched">
+          <div *ngIf="addressForm.get('pin')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+  
+        <!-- State -->
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">State</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhn4"
+            formControlName="state"
+          />
+        </div>
+  
+        <div class="warning" *ngIf="addressForm.get('state')?.touched">
+          <div *ngIf="addressForm.get('state')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+  
+        <!-- House No -->
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">House No, Building Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhn4"
+            formControlName="house"
+          />
+        </div>
+  
+        <div class="warning" *ngIf="addressForm.get('house')?.touched">
+          <div *ngIf="addressForm.get('house')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+  
+        <!-- Road Name  -->
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Road Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhn4"
+            formControlName="road"
+          />
+        </div>
+  
+        <div class="warning" *ngIf="addressForm.get('road')?.touched">
+          <div *ngIf="addressForm.get('road')?.hasError('required')">
+            *Required Filled
+          </div>
+        </div>
+      </div>
+      <br />
+  
+      <button type="submit" class="btn btn-dark" >
+        Save</button
+      ><br /><br />
+    </form>
+  </div>
+  
+  <!-- [disabled]="addressForm.invalid" -->
+
+
+  

@@ -1,0 +1,75 @@
+<section class=" active-product-area section_gap">
+  <div class="single-product-slider">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <div class="section-title">
+            <h1>Latest Products</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div
+            class="col-md-12 justify-content-center"
+            *ngIf="seller_status == 0 || admin_status == 1"
+          >
+            <button
+              routerLink="/product/add-product"
+              class="btn btn-outline-secondary"
+            >
+              Add Products
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single product -->
+        <div class="col-lg-3 col-md-6" style="margin-top: 20px;" *ngFor="let item of getprodarr">
+          <div class="single-product">
+            <img
+              class="rounded mb-4"
+              src="{{ item?.image }}"
+              alt=""
+              width="300"
+              height="300"
+            />
+            <div class="product-details">
+              <h6>{{ item?.name }}</h6>
+              <div class="price">
+                <h6>
+                  <span class="fw-bold">₹{{ item?.price }}</span>
+                </h6>
+              </div>
+              <div class="prd-bottom">
+                <a
+                  href=""
+                  class="social-info"
+                  routerLink="/product/edit-prod/{{ item.id }}"
+                  *ngIf="seller_status == 0 || admin_status == 1"
+                >
+                  <i class="fa fa-pencil fa-xl"></i>
+                  <p class="hover-text">Edit</p>
+                </a>
+                <a
+                  href=""
+                  class="social-info"
+                  *ngIf="seller_status == 0 || admin_status == 1"
+                  (click)="removeprod(item.id)"
+                >
+                  <i class="fa fa-trash fa-xl" style="color: red"></i>
+                  <p class="hover-text">Delete</p>
+                </a>
+                <a href="" class="social-info" routerLink="/product/prod-details/{{ item.id }}">
+                  <i class="fa fa-eye fa-xl" style="color: black"></i>
+                  <p class="hover-text">view more</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
