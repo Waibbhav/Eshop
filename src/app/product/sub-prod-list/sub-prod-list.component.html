@@ -1,6 +1,8 @@
 <section class=" active-product-area section_gap">
   <div class="single-product-slider">
     <div class="container">
+      <button  type="button" class="btn btn-outline-primary" (click)="order='asc'">Price(Low to High)</button>&nbsp;
+      <button  type="button" class="btn btn-outline-primary" (click)="order='desc'">Price(High to Low)</button>
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
           <div class="section-title">
@@ -26,7 +28,7 @@
       </div>
       <div class="row">
         <!-- single product -->
-        <div class="col-lg-3 col-md-6" style="margin-top: 20px;" *ngFor="let item of getprodarr">
+        <div class="col-lg-3 col-md-6" style="margin-top: 20px;" *ngFor="let item of getprodarr | sort:order">
           <div class="single-product">
             <img
               class="rounded mb-4"
